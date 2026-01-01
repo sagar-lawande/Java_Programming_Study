@@ -9,7 +9,7 @@ public class CheckNoEvenOrOdd{
     }
 
 void check(){
-    System.out.println("Enter the No :");
+    System.out.println("Enter the No : ");
     int no=sc.nextInt();
     if(no%2==0){
         System.out.println("The No "+no+" is Even");
