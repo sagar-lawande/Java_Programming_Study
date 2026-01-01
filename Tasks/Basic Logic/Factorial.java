@@ -4,7 +4,7 @@ public class Factorial
     Scanner sc=new Scanner(System.in);
     Factorial()
     {
-        System.out.println("Program for Calculate Factorial");
+        System.out.println("Program for Calculate Factorial of Number ");
 
     }
 
