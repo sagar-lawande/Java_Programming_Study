@@ -7,7 +7,7 @@ public class CheckNo{
 
     }
     void check(){
-        System.out.println("Enter the No :");
+        System.out.println("Enter the No : ");
         int no =sc.nextInt();
         if(no>0){
             System.out.println("The no is Positive");
