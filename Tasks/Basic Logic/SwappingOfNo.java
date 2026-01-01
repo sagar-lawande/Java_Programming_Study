@@ -40,7 +40,7 @@ public class SwappingOfNo{
     public static void  main(String[]args){
         SwappingOfNo s=new SwappingOfNo();
         s.swap(10,20);
-        System.out.println("-------------------------------------------------------------------");
+        System.out.println("--------------------------------------------------------------------");
         s.swapping(50,100);
 
         
