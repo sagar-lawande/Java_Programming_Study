@@ -1,29 +1,32 @@
-import java.util.Scannr;
-public class PrimeOrNot{
-    Scanner sc=new Scanner
-    PrimeOrNot(){
-        System.out.println("Program for check the no is Prime or Not");
+import java.util.Scanner;
 
-    }
+public class PrimeOrNot {
+    public static void main(String[] args) {
 
-    void check(){
-        System.out.println("Enter the No : ");
-        int no=sc.nextInt();
-        if(no<1)
-            System.out.println("The  "+no+" is Not Prime");
-        }
-        else{
-        for(int i=2;i<no;i++){
-            if(no%i==0){
-                System.out.println("The "+no+" is not Prime");
-                break;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        boolean isPrime = true;
+
+        if (num <= 1) {
+            isPrime = false;
+        } else {
+            for (int i = 2; i <= num / 2; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
             }
-            
-        }
-        }if(i==no){
-
-        
-            System.out.println("The "+no+" is Prime");
         }
 
+        if (isPrime) {
+            System.out.println(num + " is a Prime Number");
+        } else {
+            System.out.println(num + " is NOT a Prime Number");
+        }
+
+        sc.close();
     }
+}
