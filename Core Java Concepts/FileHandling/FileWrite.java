@@ -38,12 +38,5 @@ public class FileWrite{
         obj.fileCreate();
         obj.WriteFile();
 
-
-        
-
-
-
-
-
     }
 }
