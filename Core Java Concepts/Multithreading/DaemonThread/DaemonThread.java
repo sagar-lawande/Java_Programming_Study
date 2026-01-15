@@ -2,6 +2,11 @@ public class DaemonThread extends Thread{
 
     public void run(){
         System.out.println("Thread 1 is created as Daemon Thread");
+        if(Thread.currentThread().isDaemon()){
+            System.out.println("<<<<<<<<< IS DAEMON THREAD >>>>>>");
+        }else{
+            System.out.println("Child Thread");
+        }
 
         
     }
